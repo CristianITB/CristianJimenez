@@ -12,21 +12,85 @@
             <nav>
                 <a href= "index.html">Índice</a> ||
                 <a href= "Ej03.html">Ejercicio 3</a> ||
-                <a href= "Ej04.html">Ejercicio 4 (actual)</a> ||
+                <a href= "Ej04.html">Ejercicio 4 </a> ||
                 <a href= "Ej05.html">Ejercicio 5</a> ||
-                <a href= "Ej06.html">Ejercicio 6</a>
+                <a href= "Ej06.html">Ejercicio 6 (actual)</a>
             </nav>
         </header>
         <main>
-            <form action="index.html" method="get">
+            <form action="Ej06.html" method="get">
+                <!--Tabindex y pattern?????-->
                 <br>
-                <label for="fname" aria-placeholder="Escribe tu nombre">Nombre:</label><br>
-                <input type="text" name="fname" id="fname"><br><br>
-                <label for="lname" aria-placeholder="Escribe tus apellidos">Apellidos</label><br>
-                <input type="text" name="lname" id="lname"><br><br>
-                <label for="sexo"></label>
+                <label for="fname">Nombre:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Escribe tu nombre" required ><br><br>
+                <label for="lname">Apellidos</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Escribe tu nombre" required ><br><br>
 
-                <input type="submit" value="submit">
+                <label for="password">Contraseña:</label><br>
+                <input type="password" name="password" placeholder="Escribe tu contraseña" required><br><br>
+
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" name="sexo">Masculino<br>
+                <input type="radio" name="sexo">Femenino<br><br>
+
+                <label for="sexo">Idiomas:</label><br>
+                <input type="checkbox" name="idiomas">Català<br>
+                <input type="checkbox" name="idiomas">Español<br>
+                <input type="checkbox" name="idiomas">English<br>
+                <input type="checkbox" name="idiomas">Otros: (especificar)<br>
+                <input type="text" name="idiomas" placeholder="Italiano, Francés, Ruso..."><br><br>
+                
+                <label for="paises">País:</label><br>
+                <select name="Paises" id="">
+                    <option value="?">España</option>
+                    <option value="?">Francia</option>
+                    <option value="?">Andorra</option>
+                    <option value="?">Portugal</option>
+                </select><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" placeholder="Escribe tu email" required><br><br>
+
+                <label for="pagweb">Página Web:</label><br>
+                <input type="url" name="pagweb" placeholder="Escribe tu página web" ><br><br>
+
+                <label for="fecha">Fecha actual:</label><br>
+                <input type="date" name="fecha"><br><br>
+                
+                <label for="hora">Hora actual:</label><br>
+                <input type="time" name="hora"><br><br>
+
+                <label for="range">Dominio de HTML:</label><br>
+                <input type="range" name="" id=""><br><br>
+
+                <label for="descarga">Progreso de descarga: </label><br>
+                <progress id="descarga" value="69" min="0" max="100"></progress><br>
+
+                <p>Puntuación:
+                    <meter value="75" min="0" max="100" low="49" high="80" optimum="100"></meter>
+                </p>
+
+                <label for="Supermercado">Lista compra:</label><br>
+                <input type="text" id="probandodatalist" list="lista" placeholder="Alimentos">
+                <datalist id="lista">
+                    <option value="Tomates"></option>
+                    <option value="Patatas"></option>
+                    <option value="Cebollas"></option>
+                </datalist><br><br>
+                
+                <label for="archivo">Adjuntar archivos:</label><br>
+                <input type="file" name="archivo"><br><br>
+
+                <label for="comentarios">Comentarios/Sugerencias:</label><br>
+                <textarea rows="5" cols="40" placeholder="Comentanos tus sugerencias para mejorar nuestros servicios!"></textarea>
+
+                <br><br>
+                <a href= "Ej06.html">
+                <input type="button" name="f5" value="Recargar página"><br><br>
+                </a>
+                <input type="submit" value="Enviar" aria-selected="true"> || 
+                <input type="reset" value="Reestablecer parámetros">
+
             </form>
         </main>  
     </body>
