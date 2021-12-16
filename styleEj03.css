@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h2:first-child{
+    background-color: turquoise;
+    color: black;
+    font-size: 4em;
+    padding: 2%;
+    text-align: center;
+}
+/*
+ul{
+    background-color: white;
+    color: turquoise;
+}
+li{
+    display: inline-block;
+    width: 23%;
+    list-style: none;
+    font-size: 1.2em;
+}
+*/
+header nav a{
+    display: inline-block;
+    width: 15%;
+    margin: 2%;
+    text-align: center;
+    background-color: white;
+    color: turquoise;
+}
+header h1{
+    display: inline;
+}
